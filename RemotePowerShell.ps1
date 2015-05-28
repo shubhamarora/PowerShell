@@ -3,7 +3,7 @@ $machineUsername="MACHINE_USERNAME"
 $machinePassword="MACHINE_PASSWORD"
 $machineName="MACHINE_NAME";
 
-#Function EnterRemote {
+Function EnterRemote {
 #Remove all existing Powershell sessions
     Get-PSSession | Remove-PSSession
 
@@ -27,8 +27,8 @@ if ($Session.State -eq "Closed"){
         Enter-PSSession $Session
 }
 
-#pause
-#}
+pause
+}
 
 # Start script
-#. EnterRemote 
+. EnterRemote 
